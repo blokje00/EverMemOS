@@ -1,10 +1,18 @@
-# EverMemOS Requirements
+# Optimized M2 Dependencies for EverMemOS
 
-- Flask==2.0.2  # A lightweight WSGI web application framework
-- gunicorn==20.1.0  # Python WSGI HTTP Server for UNIX
-- SQLAlchemy==1.4.22  # SQL toolkit and Object-Relational Mapping
-- marshmallow==3.14.1  # Object serialization/deserialization
-- requests==2.26.0  # HTTP library for Python
-- numpy==1.21.2  # Support for large, multi-dimensional arrays
+fastapi
+uvicorn
+pymongo
+redis
+langchain-openai
+pydantic
+python-dotenv
+aiohttp
 
-# Note: Ensure to test compatibility for any new dependencies added.
+# Additional core dependencies for M2 MacBook Pro with 8GB RAM
+asyncio
+requests
+numpy
+pandas
+matplotlib
+scikit-learn
