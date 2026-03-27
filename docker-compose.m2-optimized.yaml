@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    image: your_image_name:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 8G
+        reservations:
+          cpus: '0.25'
+          memory: 4G
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=your_database_url
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
